@@ -4,8 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu white-pg">
+        <div class="main-content menu-content">
+            <h1>
+                <a href="#home" onclick="getElementById('close-menu').checked = false;">LOGO</a>
+            </h1>
+            
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">Projetos</a></li>
+                    <li><a href="#grid-one">Tecnologias</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="home" class="intro main-pg section">
+        <div class="main-content intro-cotent">
+        <div class="intro-text-content">
+        <h2>Sobre mim</h2>
+        <p>Meu nome é Renan, sou de Campinas, SP. Sou um desenvolvedor iniciante com grande interesse pela linguagem Java e focado em desenvolvimento full stack.<br>Minha jornada na programação começou com a vontade de entender códigos básicos e logo percebi que estava avançando cada vez mais nos estudos. Hoje, sei que encontrei minha paixão e quero continuar progredindo.<br>Atualmente, estou em busca de oportunidades para colaborar com equipes inovadoras, aplicar minhas habilidades em projetos reais e contribuir para soluções impactantes, enquanto aprendo e cresço junto ao time.</p>
+        </div>
+        <div class="intro-img">
+            <img src="assets/img/profile.png" alt="Minha foto de perfil.">
+        </div>
+        </div>
+    </section>
+
     
+    <!-- https://www.vectorlogo.zone/?q= -->
+
+    <section id="grid-one" class="grid-one white-pg section">
+        <div class="main-content grid-one-content">
+        <h2 class="grid-main-heading">Tecnologias</h2>
+            <p class="grid-description">Linguagens de programação e frameworks que tenho conhecimento</p>
+        <div class="grid">
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/java-ar21.svg" alt="Logo Java language" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/javascript-ar21.svg" alt="Logo JavaScript language" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/js_redux-ar21.svg" alt="Logo Redux" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/mariadb-ar21.svg" alt="Logo MariaDB" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/mongodb-ar21.svg" alt="Logo MongoDB" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/mysql-ar21.svg" alt="Logo MySQL" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/nextjs-ar21.svg" alt="Logo NextJS" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/nodejs-ar21.svg" alt="Logo NodeJS" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/reactjs-ar21.svg" alt="Logo ReactJS" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/reactrouter-ar21.svg" alt="Logo React Router" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/springio-ar21.svg" alt="Logo Spring" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/typescriptlang-ar21.svg" alt="Logo TypeScript" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/w3_css-ar21.svg" alt="Logo CSS" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/w3_html5-ar21.svg" alt="Logo HTML" />
+                </div>
+            </article>
+
+            <article>
+                <div class="gallery-img">
+                    <img src="/assets/img/github-ar21.svg" alt="Logo GitHub" />
+                </div>
+            </article>
+        </div>
+        </div>
+    </section>
+
+    <section id="intro" class="main-pg section">
+        <div class="main-content top3-content">
+            <h2>Projetos</h2>
+            <p>PArmazeno publicamente no meu GitHub alguns projetos, principalmente acadêmicos, como um jogo de xadrez, agenda, lista de tarefas, fotoblog, pomodoro, entre outros.</p>
+            <p>Atualmente, estou desenvolvendo um sistema voltado para pequenas empresas gerirem solicitações de autorização para contratação de serviços e aquisição de materiais, buscando atender suas necessidades de forma simples e eficiente.<br>Este portfólio também faz parte dos meus projetos.</p>
+            <p>Acesse meu GitHub <a href="https://github.com/renancvitor" onclick="window.open(this.href); return false;">clicando aqui</a></p>
+        </div>
+    </section>
+
+    <section id="contact" class="white-pg section">
+        <div class="main-content intro-cotent">
+        <div class="intro-text-content">
+        <h2>Lorem ipsum dolor - by Renan</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quasi. Veritatis officiis velit sint ea odio, ullam eos at mollitia. Reiciendis porro itaque ea neque pariatur nisi laboriosam dolores esse.</p>
+        </div>
+        <div class="intro-img">
+            <img src="assets/img/javascript-no.svg" alt="Homem segurando a logo do CSS, mulher empurrando a logo do JavaScript e homem segurando a logo do HTML.">
+        </div>
+
+        <div class="contact-form">
+            <fieldset class="form-grid">
+                <legend>Contact me</legend>
+
+                <div class="form-group">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Your e-mail">
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <button type="submit">Send message</button>
+                </div>
+            </fieldset>
+        </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <p><a rel="nofollow" target="_blank" href="">Feito com <span class="heart">♥</span> por Renan</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#">⮝</a>
 </body>
 </html>
