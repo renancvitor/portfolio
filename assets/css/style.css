@@ -462,6 +462,10 @@ body .full-width {
         width: 100%;
     }
 
+    .grid-one h2 {
+        font-size: 4.7rem;
+    }
+
     .grid-one-content {
         display: block;
     }
