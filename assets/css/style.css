@@ -6,6 +6,10 @@
     --silver-color: #C0C0C0;
     --text-bg-color: #fff;
     --light-gray-color: #EEEEEE;
+    --email-color: #3d4f86;
+    --linkedin-color: #4843aa;
+    --wpp-color: #036001;
+    --wpp-light-color: #3fa031;
     --gap: 3rem;
 }
 
@@ -294,12 +298,63 @@ tfoot td, table th {
     grid-column: span 2;
 }
 
+.contact-form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-form img {
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .contact-form .form-grid {
     border: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--gap);
+}
+
+.contact-form .email-form a {
+    color: var(--email-color);
+    text-decoration: underline;
+    text-decoration-color: var(--email-color);
+    text-underline-offset: 2px;
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.contact-form .email-form a:hover {
+    color: var(--primary-color);
+    text-decoration-color: var(--primary-color);
+}
+
+.contact-form .wpp-form a {
+    color: var(--wpp-color);
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.contact-form .wpp-form a:hover {
+    color: var(--wpp-light-color);
+}
+
+.contact-form .linkedin-form a {
+    color: var(--linkedin-color);
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.contact-form .linkedin-form a:hover {
+    color: var(--primary-color);
+}
+
+.wpp-form {
+    margin-top: -3rem;
+}
+
+.linkedin-form {
+    margin-top: -3rem;
 }
 
 .form-grid legend {

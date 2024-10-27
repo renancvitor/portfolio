@@ -1,7 +1,7 @@
 <!-- https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/ -->
 <!-- https://undraw.co/search -->
 <!-- https://www.vectorlogo.zone/?q= -->
-
+<!-- https://icons8.com.br/ -->
 <!-- https://www.pixelcut.ai/background-remover -->
 
 <!DOCTYPE html>
@@ -22,14 +22,14 @@
     <aside class="menu white-pg">
         <div class="main-content menu-content">
             <h1>
-                <a href="#home" onclick="getElementById('close-menu').checked = false;">LOGO</a>
+                <a href="#home" onclick="getElementById('close-menu').checked = false;">HOME</a>
             </h1>
             
-            <nav>
+            <nav aria-label="Main navigation">
                 <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#grid-one">Tecnologias</a></li>
                     <li><a href="#intro">Projetos</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,7 +44,7 @@
         <p>Meu nome é Renan, sou de Campinas, SP. Sou um desenvolvedor iniciante com grande interesse pela linguagem Java e focado em desenvolvimento full stack.<br>Minha jornada na programação começou com a vontade de entender códigos básicos e logo percebi que estava avançando cada vez mais nos estudos. Hoje, sei que encontrei minha paixão e quero continuar progredindo.<br>Atualmente, estou em busca de oportunidades para colaborar com equipes inovadoras, aplicar minhas habilidades em projetos reais e contribuir para soluções impactantes, enquanto aprendo e cresço junto ao time.</p>
         </div>
         <div class="intro-img">
-            <img src="assets/img/profile-2-s-fundo.png" alt="Minha foto de perfil.">
+            <img src="assets/img/profile-2-s-fundo.png" alt="Foto de perfil de Renan.">
         </div>
         </div>
     </section>
@@ -158,7 +158,7 @@
             <h2>Projetos</h2>
             <p>Armazeno publicamente no meu GitHub alguns projetos, principalmente acadêmicos, como um jogo de xadrez, agenda, lista de tarefas, fotoblog, pomodoro, entre outros.</p>
             <p>Atualmente, estou desenvolvendo um sistema voltado para pequenas empresas gerirem solicitações de autorização para contratação de serviços e aquisição de materiais, buscando atender suas necessidades de forma simples e eficiente.<br>Este portfólio também faz parte dos meus projetos.</p>
-            <p>Acesse meu GitHub <a href="https://github.com/renancvitor" onclick="window.open(this.href); return false;">clicando aqui</a></p>
+            <p>Acesse meu GitHub <a href="https://github.com/renancvitor" onclick="window.open(this.href); return false;" rel="noopener noreferrer">clicando aqui</a></p>
         </div>
     </section>
 
@@ -166,14 +166,33 @@
         <div class="main-content intro-cotent">
         <div class="intro-text-content">
         <h2>Entre em contato comigo!</h2>
-        <p>Baixe meu <a href="/assets/pdf/Renan Craldino Vitor.pdf" download="Renan Craldino Vitor.pdf">currículo</a> para conferir meu histórico profissional e acadêmico. Fique à vontade para entrar em contato – será um prazer conversar com você!</p>
+        <p>Gostaria de conhecer mais sobre minha trajetória? Baixe meu <a href="/assets/pdf/Renan Craldino Vitor.pdf" download="Renan Craldino Vitor.pdf">currículo aqui</a>. Fique à vontade para entrar em contato – será um prazer conversar com você!</p>
         </div>
         <div class="intro-img">
             <img src="assets/img/contact-us.svg" alt="Mulher segurando um envelope de correspondência, um smartphone à sua direita e um telefone fixo.">
         </div>
-
+            
         <div class="contact-form">
-            <fieldset class="form-grid">
+            <div class="email-form">
+                <p>
+                    <img src="assets/img/icons8-gmail-novo.svg" alt="Ícone do Gmail">Envie um e-mail para mim: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=renan.vitor.cm@gmail.com&su=Contato pelo Portfólio" target="_blank" rel="noopener noreferrer">renan.vitor.cm@gmail.com</a> (abre o Gmail em uma nova aba).
+                </p>
+            </div>
+            <div class="wpp-form">
+                <p>
+                    <img src="assets/img/icons8-whatsapp.svg" alt="Ícone do WhatsApp">Me chame no WhatsApp se preferir: <a href="https://wa.me/5519995375885" target="_blank" rel="noopener noreferrer">Enviar mensagem</a>
+                </p>
+            </div>
+            <div class="linkedin-form">
+                <p>
+                    <img src="assets/img/icons8-linkedin.svg" alt="Ícone do Linkedin">Descubra mais sobre minha trajetória profissional e vamos nos conectar no <a href="https://www.linkedin.com/in/renan-vitor-027907139/" onclick="window.open(this.href); return false;" rel="noopener noreferrer">LinkedIn!</a>
+                </p>
+            </div>
+
+
+
+            <!-- Formulário inativo temporariamente -->
+            <!-- <fieldset class="form-grid">
                 <legend>Contact me</legend>
 
                 <div class="form-group">
@@ -199,7 +218,7 @@
                 <div class="form-group full-width">
                     <button type="submit">Send message</button>
                 </div>
-            </fieldset>
+            </fieldset> -->
         </div>
         </div>
     </section>
