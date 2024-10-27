@@ -244,6 +244,29 @@ tfoot td, table th {
     min-height: 100vh;
 }
 
+/* .grid-one h4 {
+    font-style: italic;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    border-left: 0.2rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+} */
+
+.grid-one h4 {
+    font-style: italic;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    background-color: #e6e5e5;
+    background-image: linear-gradient(to right, transparent, var(--silver-color) 10%);
+    border-radius: 0.4rem;
+}
+
 .grid-main-heading {
     margin-bottom: 1rem;
 }
