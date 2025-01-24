@@ -516,5 +516,28 @@ body .full-width {
 
     .menu-spacing {
         display: none;
-    }
+    }  
+    
+}
+
+h6 {
+    font-size: 3.0rem !important;
+}
+
+.gif-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gif-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.gif-gallery figure {
+    text-align: center;
+    max-width: 600px;
 }
