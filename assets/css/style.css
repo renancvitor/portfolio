@@ -1,16 +1,21 @@
 :root {
-    --primary-color: #0a1128;
-    --light-primary-color: #283764;
+    --primary-color: #6D2323;
+    --light-primary-color: #A31D1D;
     --secondary-color: crimson;
     --shadow-color: rgb(0, 0, 0);
-    --silver-color: #C0C0C0;
-    --text-bg-color: #fff;
-    --light-gray-color: #EEEEEE;
+    --silver-color: #FEF9E1;
+    --text-bg-color: #FEF9E1;
+    --light-gray-color: #E5D0AC;
     --email-color: #3d4f86;
     --linkedin-color: #4843aa;
+    --linkedin-hover: #577BC1;
     --wpp-color: #036001;
     --wpp-light-color: #3fa031;
     --gap: 3rem;
+    --link-projeto-github: #FCC6FF;
+    --link-projeto-github-hoover: #EFB6C8;
+    --download-cv: #344CB7;
+    --download-cv-hover: #000957;
 }
 
 * {
@@ -18,11 +23,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/*
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;0
-*/
 
 html {
     font-size: 62.5%;
@@ -65,7 +65,7 @@ h5 {
 }
 
 h6 {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
 }
 
 a {
@@ -110,6 +110,36 @@ tfoot td, table th {
     background-size: cover;
     background-position: center center;
     color: var(--text-bg-color);
+}
+
+.main-pg h6 {
+    margin-bottom: 25px;
+}
+
+.main-pg h5 {
+    font-size: 3.0rem;
+    margin-top: 20px;
+}
+
+.main-pg li {
+    list-style: none;
+}
+
+.main-pg p {
+    text-align: justify;
+}
+
+.main-pg img {
+    margin-top: 2%;
+}
+
+.main-pg a {
+    color: var(--link-projeto-github);
+    margin-top: 5%;
+}
+
+.main-pg a:hover {
+    color: var(--link-projeto-github-hoover);
 }
 
 .white-pg {
@@ -204,6 +234,14 @@ tfoot td, table th {
 .intro-img img, .intro-img svg {
     max-width: 100%;
     min-height: auto;
+}
+
+.intro-text-content a {
+    color: var(--download-cv);
+}
+
+.intro-text-content a:hover {
+    color: var(--download-cv-hover);
 }
 
 .top3-content {
@@ -327,8 +365,8 @@ tfoot td, table th {
 }
 
 .contact-form .email-form a:hover {
-    color: var(--primary-color);
-    text-decoration-color: var(--primary-color);
+    color: var(--linkedin-hover);
+    text-decoration-color: var(--email-color);
 }
 
 .contact-form .wpp-form a {
@@ -346,7 +384,7 @@ tfoot td, table th {
 }
 
 .contact-form .linkedin-form a:hover {
-    color: var(--primary-color);
+    color: var(--linkedin-hover);
 }
 
 .wpp-form {
@@ -518,10 +556,6 @@ body .full-width {
         display: none;
     }  
     
-}
-
-h6 {
-    font-size: 3.0rem !important;
 }
 
 .gif-gallery img {
