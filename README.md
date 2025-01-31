@@ -1,27 +1,35 @@
-# Portfólio Pessoal
+# 🌟 Portfólio Pessoal de Renan Vitor 🌟
 
-Bem-vindo ao meu portfólio online! 👋
+---
 
-Este repositório contém o código do meu site pessoal, onde compartilho informações sobre mim, meus projetos e minha experiência profissional.
+## 🚀 Acesse o meu portfólio online
 
-## 🚀 Como acessar meu portfólio
+Você pode acessar meu portfólio diretamente através do seguinte link:
 
-Você pode acessar meu portfólio online clicando no link abaixo:
+- [**Acessar meu Portfólio Online**](https://renancvitor.github.io/portfolio/)
 
-[**Meu Portfólio Online**](https://renancvitor.github.io/portfolio/)
+---
 
-## 🔧 Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML5
-- CSS3
+- **🌐 HTML5**
+- **🎨 CSS3**
+
+---
 
 ## 📚 O que você encontrará aqui
 
 No meu portfólio você pode encontrar:
 
-- **Sobre mim**: Uma breve descrição sobre minha trajetória profissional e pessoal.
-- **Tecnologias**: Uma lista de todas as tecnologias que já tive pelo menos contato acadêmico.
-- **Projetos**: Link para meu repositório GitHub e imagens animadas do meu projeto Java.
-- **Contato**: Formas de entrar em contato comigo para possíveis oportunidades de trabalho ou parcerias.
+- **👤 Sobre Mim**: Uma descrição sobre minha trajetória profissional e pessoal.
+- **⚙️ Tecnologias**: Lista de tecnologias com as quais já tive pelo menos contato acadêmico.
+- **💻 Projetos**: Link para meu repositório GitHub e imagens animadas dos meus projetos em Java.
+- **📬 Contato**: Formas de entrar em contato para oportunidades de trabalho ou parcerias.
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
