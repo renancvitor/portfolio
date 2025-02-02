@@ -453,10 +453,6 @@ body .full-width {
     font-size: 1.6rem;
 }
 
-.footer a {
-    color: var(--primary-color);
-}
-
 .heart {
     color: var(--secondary-color);
 }

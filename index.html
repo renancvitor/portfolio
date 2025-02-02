@@ -4,6 +4,8 @@
 <!-- https://undraw.co/search -->
 <!-- https://www.vectorlogo.zone/?q= -->
 <!-- https://icons8.com.br/ -->
+ <!-- Favicons navegador -->
+
 <!-- https://www.pixelcut.ai/background-remover -->
 
 <!DOCTYPE html>
@@ -226,24 +228,34 @@
             <div class="contact-form">
                 <div class="email-form">
                     <p>
-                        <img src="assets/img/icons8-gmail-novo.svg" alt="Ícone do Gmail">Envie um e-mail para mim: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=renan.vitor.cm@gmail.com&su=Contato pelo Portfólio" target="_blank" rel="noopener noreferrer">renan.vitor.cm@gmail.com</a> (abre o Gmail em uma nova aba).
+                        <img src="assets/img/icons8-gmail-novo.svg" alt="Ícone do Gmail">Envie um e-mail para mim:
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=renan.vitor.cm@gmail.com&su=Contato pelo Portfólio" target="_blank" rel="noopener noreferrer">
+                            renan.vitor.cm@gmail.com
+                        </a>
+                        <button style="border: none; background: none; cursor: pointer; margin-left: 8px;" 
+                                onclick="navigator.clipboard.writeText('renan.vitor.cm@gmail.com')">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--texto)" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM14 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H14C15.1 23 16 22.1 16 21V7C16 5.9 15.1 5 14 5ZM14 21H8V7H14V21Z"/>
+                            </svg>
+                        </button>
+                        (Abrir no Gmail).
                     </p>
-            </div>
+                </div>
+             
+                <div class="wpp-form">
+                        <p>
+                            <img src="assets/img/icons8-whatsapp.svg" alt="Ícone do WhatsApp">Me chame no WhatsApp se preferir: <a href="https://wa.me/5519995375885" target="_blank" rel="noopener noreferrer">Enviar mensagem</a>
+                        </p>
+                </div>
+                
+                <div class="linkedin-form">
+                        <p>
+                            <img src="assets/img/icons8-linkedin.svg" alt="Ícone do Linkedin">Descubra mais sobre minha trajetória profissional e vamos nos conectar no <a href="https://www.linkedin.com/in/renan-vitor-developer/" onclick="window.open(this.href); return false;" rel="noopener noreferrer">LinkedIn!</a>
+                        </p>
+                </div>
 
-            <div class="wpp-form">
-                    <p>
-                        <img src="assets/img/icons8-whatsapp.svg" alt="Ícone do WhatsApp">Me chame no WhatsApp se preferir: <a href="https://wa.me/5519995375885" target="_blank" rel="noopener noreferrer">Enviar mensagem</a>
-                    </p>
-            </div>
-            
-            <div class="linkedin-form">
-                    <p>
-                        <img src="assets/img/icons8-linkedin.svg" alt="Ícone do Linkedin">Descubra mais sobre minha trajetória profissional e vamos nos conectar no <a href="https://www.linkedin.com/in/renan-vitor-developer/" onclick="window.open(this.href); return false;" rel="noopener noreferrer">LinkedIn!</a>
-                    </p>
-            </div>
-
-            <!-- Formulário inativo temporariamente -->
-            <!-- <fieldset class="form-grid">
+                <!-- Formulário inativo temporariamente -->
+                <!-- <fieldset class="form-grid">
                 <legend>Contact me</legend>
 
                 <div class="form-group">
@@ -269,20 +281,20 @@
                 <div class="form-group full-width">
                     <button type="submit">Send message</button>
                 </div>
-            </fieldset> -->
+                </fieldset> -->
             </div>
         </div>
     </section>
 
     <footer id="footer" class="footer">
-        <p><a rel="nofollow" target="_blank" href="">Feito com <span class="heart">♥</span> por Renan</a></p>
+        <p>Feito com <span class="heart">♥</span> por Renan</p>
     </footer>
 
     <a class="back-to-top" href="#">⮝</a>
 
     <script>
         window.onload = function() {
-            window.location.hash = 'home'; // Redireciona para a seção HOME
+            window.location.hash = 'home';
         };
     </script>
 
