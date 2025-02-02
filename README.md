@@ -1,8 +1,12 @@
-# 🌟 Portfólio Pessoal de Renan Vitor 🌟
+<h1 align="center">🌟 Portfólio Pessoal de Renan Vitor 🌟 <br> <img src="https://img.shields.io/badge/Status-Concluído-green"></h1>
 
 ---
 
-## 🚀 Acesse o meu portfólio online
+<h4 align="center">✅ Projeto concluído! ✅</h4>
+
+---
+
+<h2 align="center">🚀 Acesse o meu portfólio online</h2>
 
 Você pode acessar meu portfólio diretamente através do seguinte link:
 
@@ -10,16 +14,16 @@ Você pode acessar meu portfólio diretamente através do seguinte link:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+<h2 align="center">🛠️ Tecnologias Utilizadas</h2>
 
-Este projeto foi desenvolvido com as seguintes tecnologias:
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- **🌐 HTML5**
-- **🎨 CSS3**
+- **🌐 HTML5** - Estruturação da página
+- **🎨 CSS3** - Estilo e personalização visual
 
 ---
 
-## 📚 O que você encontrará aqui
+<h2 align="center">📚 O que você encontrará aqui</h2>
 
 No meu portfólio você pode encontrar:
 
@@ -30,6 +34,6 @@ No meu portfólio você pode encontrar:
 
 ---
 
-## 📄 Licença
+<h2 align="center">📄 Licença</h2>
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE), permitindo sua utilização, modificação e distribuição de forma livre, conforme os termos descritos.
