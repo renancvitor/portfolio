@@ -32,4 +32,4 @@ No meu portfólio você pode encontrar:
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+Este projeto está licenciado sob a [Licença MIT](LICENSE), permitindo sua utilização, modificação e distribuição de forma livre, conforme os termos descritos.
