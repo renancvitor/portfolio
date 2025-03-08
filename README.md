@@ -34,6 +34,16 @@ No meu portfólio você pode encontrar:
 
 ---
 
+<h2 align="center">📫 Contato</h2>
+
+Se tiver dúvidas ou sugestões, entre em contato:
+
+- 📧 **E-mail**: [renan.vitor.cm@gmail.com](mailto:renan.vitor.cm@gmail.com)
+- 🐦 **GitHub**: [renancvitor](https://github.com/renancvitor)
+- 🟦 **LinkedIn**: [Renan Vitor](https://www.linkedin.com/in/renan-vitor-developer/)
+
+---
+
 <h2 align="center">🤝 Contribuições</h2>
 
 Se você quiser contribuir para o projeto, siga estas etapas:
