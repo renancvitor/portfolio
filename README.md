@@ -18,8 +18,8 @@ Você pode acessar meu portfólio diretamente através do seguinte link:
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- **🌐 HTML5** - Estruturação da página
-- **🎨 CSS3** - Estilo e personalização visual
+- **🌐 [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)** - Estruturação da página
+- **🎨 [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)** - Estilo e personalização visual
 
 ---
 
