@@ -439,6 +439,7 @@ body .full-width {
     font-size: 3rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
+    margin-bottom: -8rem;
 }
 
 .form-group button:hover {
@@ -496,10 +497,10 @@ body .full-width {
 
 /* Estilização da legenda */
 .form-grid legend {
+    padding-top: 30px;
     font-size: 3.2rem;
     font-weight: bold;
     color: var(--primary-color);
-    padding: 0 10px;
     text-align: center;
     width: 100%;
 }
