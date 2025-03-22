@@ -16,6 +16,7 @@
     --link-projeto-github-hoover: #EFB6C8;
     --download-cv: #344CB7;
     --download-cv-hover: #000957;
+    --input-background: #A31D1D;
 }
 
 * {
@@ -481,10 +482,71 @@ body .full-width {
     border: 0.1rem solid var(--primary-color);
 }
 
+/* Estilização do fieldset */
+.form-grid {
+    font-size: 2.2rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 20px;
+    background: var(--background-light);
+    display: grid;
+    gap: 16px;
+}
+
+/* Estilização da legenda */
+.form-grid legend {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilização dos grupos de formulário */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
+/* Inputs e textarea */
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 2rem;
+    background: var(--input-background);
+    color: var(--text-bg-color);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
 @media (max-width: 800px) {
     .intro-cotent, .grid {
         grid-template-columns: 1fr;
     }
+
+    /* Aqui */
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: span 2;
+    }
+    /* Aqui */
 
     .gallery-img {
         width: 100%;
