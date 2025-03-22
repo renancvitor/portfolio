@@ -17,6 +17,7 @@
     --download-cv: #344CB7;
     --download-cv-hover: #000957;
     --input-background: #A31D1D;
+    --text-placeholder: #E5D0AC;
 }
 
 * {
@@ -525,6 +526,15 @@ body .full-width {
     background: var(--input-background);
     color: var(--text-bg-color);
     transition: border-color 0.3s ease;
+}
+
+/* Estilização do placeholder */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-placeholder); /* Defina essa variável no seu CSS */
+    font-size: 1.8rem;
+    font-style: italic;
+    opacity: 0.7; /* Ajuste a opacidade conforme necessário */
 }
 
 .form-group input:focus,
