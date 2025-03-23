@@ -27,7 +27,7 @@ form.addEventListener('submit', async (e) => {
       alert(result.error);  // Exibe mensagem de erro
     }
   } catch (error) {
-    console.error('Erro ao enviar o formulário:', error);
+    console.error('Erro ao enviar o formulário: 2', error);
     alert('Ocorreu um erro ao enviar o formulário.');
   }
 });
