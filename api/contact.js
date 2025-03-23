@@ -1,5 +1,4 @@
 // api/contact.js
-
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
@@ -13,10 +12,10 @@ export default async function handler(req, res) {
 
     // Configuração do transporte de e-mail com Nodemailer
     const transporter = nodemailer.createTransport({
-      service: 'gmail', // Pode ser outro serviço, como 'outlook', 'yahoo', etc.
+      service: 'gmail',
       auth: {
         user: process.env.EMAIL_USER, // Seu e-mail
-        pass: process.env.EMAIL_PASS, // Senha do e-mail ou uma App Password
+        pass: process.env.EMAIL_PASS, // Senha de aplicativo
       },
     });
 
@@ -37,10 +36,10 @@ export default async function handler(req, res) {
       await transporter.sendMail(mailOptions);
       return res.status(200).json({ message: 'Mensagem enviada com sucesso!' });
     } catch (error) {
-      console.error(error);
+      console.error('Erro ao enviar o e-mail:', error);
       return res.status(500).json({ error: 'Erro ao enviar a mensagem.' });
     }
   } else {
-    res.status(405).json({ error: 'Método não permitido' });
+    return res.status(405).json({ error: 'Método não permitido' });
   }
 }
