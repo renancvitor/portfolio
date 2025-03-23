@@ -1,3 +1,4 @@
+// script.js
 const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', async (e) => {
@@ -10,10 +11,8 @@ form.addEventListener('submit', async (e) => {
     message: formData.get('message')
   };
 
-  console.log('Dados do formulário:', data);  // Adicionando log para depuração
-
   try {
-    const response = await fetch('https://portfolio-nu-eight-15.vercel.app/api/contact', {
+    const response = await fetch('/api/contact', {  // Usando a rota API do Next.js
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -24,9 +23,9 @@ form.addEventListener('submit', async (e) => {
     const result = await response.json();
 
     if (response.ok) {
-      alert(result.message);  // Exibe mensagem de sucesso
+      alert(result.message);
     } else {
-      alert(result.error);  // Exibe mensagem de erro
+      alert(result.error);
     }
   } catch (error) {
     console.error('Erro ao enviar o formulário:', error);
