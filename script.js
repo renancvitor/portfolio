@@ -30,6 +30,6 @@ form.addEventListener('submit', async (e) => {
     }
   } catch (error) {
     console.error('Erro ao enviar o formulário:', error);
-    alert('Ocorreu um erro ao enviar o formulário.');
+    alert('Ocorreu um erro ao enviar o formulário!');
   }
 });
