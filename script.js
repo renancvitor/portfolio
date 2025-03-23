@@ -2,6 +2,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contact-form");
     const submitButton = document.getElementById("submit-button");
     const successMessage = document.getElementById("success-message");
+    
+    // Validação do e-mail
+    const emailInput = document.getElementById("email");
+    const emailHelp = document.getElementById("emailHelp");
+
+    // Evento de blur (quando o campo de e-mail perde o foco)
+    emailInput.addEventListener("blur", function () {
+        const emailValue = emailInput.value;
+        
+        // Verifica se o e-mail é válido com base no padrão definido
+        const isValidEmail = emailInput.checkValidity();
+
+        // Exibe a mensagem de erro se o e-mail for inválido
+        if (!isValidEmail) {
+            emailHelp.style.display = "block"; // Mostra a mensagem
+        } else {
+            emailHelp.style.display = "none"; // Oculta a mensagem
+        }
+    });
 
     // Verifica se todos os campos estão preenchidos para ativar o botão
     form.addEventListener("input", function () {
@@ -24,9 +43,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 form.reset(); // Limpa o formulário
                 submitButton.disabled = true; // Desativa o botão novamente
             } else {
+                // Mostra o alerta apenas se o response não for ok
                 alert("Ocorreu um erro. Tente novamente mais tarde.");
             }
         })
-        .catch(() => alert("Erro ao enviar mensagem."));
+        .catch((error) => {
+            // Mostra o erro apenas se houver uma falha na requisição
+            console.error('Erro ao enviar mensagem:', error);
+            alert("Erro ao enviar mensagem.");
+        });
     });
 });
