@@ -255,40 +255,40 @@
                 </div>
 
                 <!-- Formulário inativo temporariamente -->
-                <fieldset class="form-grid">
-                    <legend>Estou pronto para ouvir suas ideias! (em breve com servidor rodando)</legend>
-
-                    <form class="contact-form">
+                <form id="contact-form" action="/api/contact" method="POST">
+                    <fieldset class="form-grid">
+                        <legend>Estou pronto para ouvir suas ideias! (em breve com servidor rodando)</legend>
+                
                         <div class="form-group">
                             <label for="first-name">Nome</label>
-                            <input type="text" name="first-name" id="first-name" placeholder="Seu nome">
+                            <input type="text" name="first-name" id="first-name" placeholder="Seu nome" required />
                         </div>
-                    
+                
                         <div class="form-group">
                             <label for="last-name">Sobrenome</label>
-                            <input type="text" name="last-name" id="last-name" placeholder="Seu sobrenome">
+                            <input type="text" name="last-name" id="last-name" placeholder="Seu sobrenome" required />
                         </div>
-                    
+                
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                            <input type="email" name="email" id="email" placeholder="Seu e-mail" required />
                         </div>
-                    
+                
                         <div class="form-group full-width">
                             <label for="message">Mensagem</label>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
                         </div>
-                    
+                
                         <div class="form-group full-width">
                             <button type="submit">Enviar mensagem</button>
                         </div>
-                    </form>
-                </fieldset>
+                    </fieldset>
+                </form>
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 
     <footer id="footer" class="footer">
         <p>Feito com <span class="heart">♥</span> por Renan</p>
