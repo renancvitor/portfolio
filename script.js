@@ -10,6 +10,8 @@ form.addEventListener('submit', async (e) => {
     message: formData.get('message')
   };
 
+  console.log('Dados do formulário:', data);  // Adicionando log para depuração
+
   try {
     const response = await fetch('https://portfolio-nu-eight-15.vercel.app/api/contact', {
       method: 'POST',
@@ -27,7 +29,7 @@ form.addEventListener('submit', async (e) => {
       alert(result.error);  // Exibe mensagem de erro
     }
   } catch (error) {
-    console.error('Erro ao enviar o formulário: 2', error);
+    console.error('Erro ao enviar o formulário:', error);
     alert('Ocorreu um erro ao enviar o formulário.');
   }
 });
