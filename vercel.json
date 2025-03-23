@@ -9,7 +9,7 @@
     "routes": [
       {
         "src": "/api/contact",
-        "dest": "/pages/api/contact.js"
+        "dest": "/api/contact.js"
       }
     ]
   }
