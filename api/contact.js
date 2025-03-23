@@ -22,7 +22,7 @@ export default async function handler(req, res) {
     // Configuração do e-mail
     const mailOptions = {
       from: process.env.EMAIL_USER, // E-mail do remetente
-      to: process.env.EMAIL_USER, // E-mail para o qual a mensagem será enviada
+      to: 'renan.vitor.cm@gmail.com', // E-mail para o qual a mensagem será enviada
       subject: 'Novo formulário de contato',
       text: `
         Nome: ${name}
