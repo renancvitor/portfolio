@@ -1,36 +1,32 @@
-const form = document.getElementById('contact-form');
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const submitButton = document.getElementById("submit-button");
+    const successMessage = document.getElementById("success-message");
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-
-  const formData = new FormData(form);
-  const data = {
-    name: formData.get('first-name') + ' ' + formData.get('last-name'),
-    email: formData.get('email'),
-    message: formData.get('message')
-  };
-
-  console.log('Dados do formulário:', data);  // Adicionando log para depuração
-
-  try {
-    const response = await fetch('https://portfolio-nu-eight-15.vercel.app/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
+    // Verifica se todos os campos estão preenchidos para ativar o botão
+    form.addEventListener("input", function () {
+        const isValid = form.checkValidity();
+        submitButton.disabled = !isValid;
     });
 
-    // Verifica se a resposta está OK (status 200-299)
-    if (response.ok) {
-      const result = await response.json(); // Certificando-se de ler o JSON da resposta
-      alert(result.message);  // Exibe mensagem de sucesso
-    } else {
-      const result = await response.json(); // Lê o JSON da resposta para mensagens de erro
-      alert(result.error);  // Exibe mensagem de erro
-    }
-  } catch (error) {
-    console.error('Erro ao enviar o formulário:', error);
-    alert('Ocorreu um erro ao enviar o formulário!');
-  }
+    // Envio do formulário com feedback visual
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Evita o envio imediato para mostrar feedback
+
+        fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(response => {
+            if (response.ok) {
+                successMessage.style.display = "block"; // Mostra mensagem de sucesso
+                form.reset(); // Limpa o formulário
+                submitButton.disabled = true; // Desativa o botão novamente
+            } else {
+                alert("Ocorreu um erro. Tente novamente mais tarde.");
+            }
+        })
+        .catch(() => alert("Erro ao enviar mensagem."));
+    });
 });

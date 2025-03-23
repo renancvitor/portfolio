@@ -255,7 +255,7 @@
                 </div>
 
                 <!-- Formulário inativo temporariamente -->
-                <form id="contact-form">
+                <form id="contact-form" action="https://formspree.io/f/xblgyrka" method="post">
                     <fieldset class="form-grid">
                         <legend>Estou pronto para ouvir suas ideias! (em breve com servidor rodando)</legend>
                 
@@ -271,7 +271,8 @@
                 
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" placeholder="Seu e-mail" required />
+                            <input type="email" name="email" id="email" placeholder="Seu e-mail" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"/>
+                            <small id="emailHelp">Digite um e-mail válido, ex: exemplo@email.com</small>
                         </div>
                 
                         <div class="form-group full-width">
@@ -282,13 +283,17 @@
                         <div class="form-group full-width">
                             <button type="submit">Enviar mensagem</button>
                         </div>
+
+                        <p id="success-message" style="display: none; color: green;">
+                            ✅ Mensagem enviada com sucesso!
+                        </p>
                     </fieldset>
                 </form>
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <footer id="footer" class="footer">
         <p>Feito com <span class="heart">♥</span> por Renan</p>
