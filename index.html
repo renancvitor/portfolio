@@ -257,30 +257,32 @@
                 <!-- Formulário inativo temporariamente -->
                 <fieldset class="form-grid">
                     <legend>Estou pronto para ouvir suas ideias! (em breve com servidor rodando)</legend>
-                
-                    <div class="form-group">
-                        <label for="first-name">Nome</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="Seu nome">
-                    </div>
-                
-                    <div class="form-group">
-                        <label for="last-name">Sobrenome</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Seu sobrenome">
-                    </div>
-                
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Seu e-mail">
-                    </div>
-                
-                    <div class="form-group full-width">
-                        <label for="message">Mensagem</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
-                    </div>
-                
-                    <div class="form-group full-width">
-                        <button type="submit">Enviar mensagem</button>
-                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="first-name">Nome</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Seu nome">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="last-name">Sobrenome</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Seu sobrenome">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                        </div>
+                    
+                        <div class="form-group full-width">
+                            <label for="message">Mensagem</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                        </div>
+                    
+                        <div class="form-group full-width">
+                            <button type="submit">Enviar mensagem</button>
+                        </div>
+                    </form>
                 </fieldset>
             </div>
         </div>
@@ -288,17 +290,13 @@
 
     <script>
         // Selecionar o formulário
-        const form = document.querySelector('.form-grid');
+        const form = document.querySelector('.contact-form');
     
         form.addEventListener('submit', function (event) {
             event.preventDefault(); // Impede o envio tradicional do formulário
     
             const formData = new FormData(form);
-            const data = {};
-    
-            formData.forEach((value, key) => {
-                data[key] = value;
-            });
+            const data = Object.fromEntries(formData.entries()); // Melhor forma de transformar FormData em objeto
     
             fetch('/send', { // Alterado para a URL correta
                 method: 'POST',
@@ -312,7 +310,7 @@
                 if (data.message) {
                     alert('Mensagem enviada com sucesso!');
                 } else {
-                    alert('Ocorreu um erro ao enviar a mensagem.');
+                    alert(data.error || 'Ocorreu um erro ao enviar a mensagem.'); // Mostrar mensagem de erro caso exista
                 }
             })
             .catch(error => {
