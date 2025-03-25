@@ -595,14 +595,32 @@ body .full-width {
     }
     /* Aqui */
 
+    .grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        overflow: visible;
+    }
+
+    h2.grid-main-heading {
+        font-size: 4.4rem !important;
+    }
+
+    .grid h3 {
+        padding-left: 0;
+        text-align: center;
+    }
+
     .gallery-img {
-        width: 100%;
+        overflow: visible;
         max-width: 100%;
-        max-height: 100%;
+        margin: 7px 0;
     }
 
     .gallery-img img {
         width: 100%;
+        transform: scale(1.5);
+        transform-origin: center;
     }
 
     .grid-one h2 {
