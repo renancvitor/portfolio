@@ -227,17 +227,9 @@ tfoot td, table th {
     min-height: 100vh;
 }
 
-.intro-text-content p {
-    white-space: normal !important;
-    word-spacing: normal !important;
-    letter-spacing: normal !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
 .line-break {
     display: block;
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
 .intro-text-content, .intro-img {
