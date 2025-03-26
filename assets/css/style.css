@@ -227,15 +227,23 @@ tfoot td, table th {
     min-height: 100vh;
 }
 
+.intro-text-content p {
+    white-space: normal !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.line-break {
+    display: block;
+    margin-top: 5px;
+}
+
 .intro-text-content, .intro-img {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-}
-
-.intro-img img, .intro-img svg {
-    max-width: 100%;
-    min-height: auto;
 }
 
 .intro-text-content a {
@@ -244,6 +252,20 @@ tfoot td, table th {
 
 .intro-text-content a:hover {
     color: var(--download-cv-hover);
+}
+
+/* .typing-effect {
+    display: inline-block;
+    border-right: 2px solid var(--primary-color);
+    padding-right: 5px;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.4;
+} */
+
+.intro-img img, .intro-img svg {
+    max-width: 100%;
+    min-height: auto;
 }
 
 .top3-content {
@@ -272,7 +294,6 @@ tfoot td, table th {
 
 .grid h3::before {
     counter-increment: grid-counter;
-    /* content: counter(grid-counter); */
     position: absolute;
     font-size: 8rem;
     font-style: italic;
@@ -287,17 +308,6 @@ tfoot td, table th {
     justify-content: center;
     min-height: 100vh;
 }
-
-/* .grid-one h4 {
-    font-style: italic;
-    font-size: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    color: var(--primary-color);
-    padding: 0.8rem 1.5rem;
-    border-left: 0.2rem solid rgba(0, 0, 0, 0.2);
-    border-radius: 0.4rem;
-} */
 
 .grid-one h4 {
     font-style: italic;
@@ -484,7 +494,6 @@ body .full-width {
     border: 0.1rem solid var(--primary-color);
 }
 
-/* Estilização do fieldset */
 .form-grid {
     font-size: 2.2rem;
     border: 2px solid var(--primary-color);
@@ -495,7 +504,6 @@ body .full-width {
     gap: 16px;
 }
 
-/* Estilização da legenda */
 .form-grid legend {
     padding-top: 30px;
     font-size: 3.2rem;
@@ -505,7 +513,6 @@ body .full-width {
     width: 100%;
 }
 
-/* Estilização dos grupos de formulário */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -517,7 +524,6 @@ body .full-width {
     color: var(--text-dark);
 }
 
-/* Inputs e textarea */
 .form-group input,
 .form-group textarea {
     padding: 10px;
@@ -529,13 +535,12 @@ body .full-width {
     transition: border-color 0.3s ease;
 }
 
-/* Estilização do placeholder */
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: var(--text-placeholder); /* Defina essa variável no seu CSS */
+    color: var(--text-placeholder);
     font-size: 1.8rem;
     font-style: italic;
-    opacity: 0.7; /* Ajuste a opacidade conforme necessário */
+    opacity: 0.7;
 }
 
 .form-group input:focus,
@@ -570,10 +575,10 @@ body .full-width {
 #success-message {
     display: block;
     color: green;
-    text-align: justify; /* Justificar o texto */
+    text-align: justify;
     margin-top: -5rem;
-    padding: 5px; /* Ajusta o preenchimento */
-    text-align: center; /* Centraliza o texto */
+    padding: 5px;
+    text-align: center;
 }
 
 .form-group p {
@@ -585,7 +590,6 @@ body .full-width {
         grid-template-columns: 1fr;
     }
 
-    /* Aqui */
     .form-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -593,8 +597,7 @@ body .full-width {
     .form-group.full-width {
         grid-column: span 2;
     }
-    /* Aqui */
-
+    
     .grid {
         grid-template-columns: 1fr;
         justify-items: center;

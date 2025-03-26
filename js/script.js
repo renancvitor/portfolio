@@ -43,3 +43,32 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const elements = document.querySelectorAll("#home .intro-text-content h2, #home .intro-text-content p");
+
+//     elements.forEach(element => {
+//         let originalHtml = element.innerHTML.trim(); // Mantém <br> intactos
+//         let formattedText = originalHtml.replace(/\s+/g, ' '); // Remove múltiplos espaços
+
+//         element.innerHTML = ''; // Limpa o conteúdo original
+//         let i = 0;
+
+//         function type() {
+//             if (i < formattedText.length) {
+//                 if (formattedText[i] === "<") {  
+//                     // Se encontrar <br>, adiciona diretamente
+//                     let tagEnd = formattedText.indexOf(">", i);
+//                     element.innerHTML += formattedText.substring(i, tagEnd + 1);
+//                     i = tagEnd + 1;
+//                 } else {
+//                     element.innerHTML += formattedText[i];
+//                     i++;
+//                 }
+//                 setTimeout(type, 15);
+//             }
+//         }
+
+//         type(); // Inicia o efeito de digitação
+//     });
+// });
