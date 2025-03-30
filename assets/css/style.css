@@ -32,14 +32,10 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
     line-height: 1.5;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -96,14 +92,16 @@ table caption {
     margin-bottom: 1rem;
 }
 
-table td, table th{
+table td,
+table th {
     white-space: nowrap;
     padding: 1rem;
     text-align: left;
     border: 0.1rem solid var(--light-gray-color);
 }
 
-tfoot td, table th {
+tfoot td,
+table th {
     background: var(--light-gray-color);
 }
 
@@ -153,6 +151,69 @@ tfoot td, table th {
     max-width: 120rem;
     margin: 0 auto;
     padding: 10rem var(--gap);
+}
+
+.intro-cotent {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.line-break {
+    display: block;
+    margin-top: 7px;
+}
+
+.intro-text-content,
+.intro-img {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex: 1;
+    max-height: fit-content;
+}
+
+.intro-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    max-height: 100%;
+}
+
+.intro-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-height: 100%;
+}
+
+.intro-img img {
+    width: auto;
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.intro-text-content a {
+    color: var(--download-cv);
+}
+
+.intro-text-content a:hover {
+    color: var(--download-cv-hover);
 }
 
 .section {
@@ -219,33 +280,6 @@ tfoot td, table th {
     left: 25%;
 }
 
-.intro-cotent {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: var(--gap);
-    min-height: 100vh;
-}
-
-.line-break {
-    display: block;
-    margin-top: 7px;
-}
-
-.intro-text-content, .intro-img {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
-
-.intro-text-content a {
-    color: var(--download-cv);
-}
-
-.intro-text-content a:hover {
-    color: var(--download-cv-hover);
-}
-
 /* .typing-effect {
     display: inline-block;
     border-right: 2px solid var(--primary-color);
@@ -255,7 +289,8 @@ tfoot td, table th {
     line-height: 1.4;
 } */
 
-.intro-img img, .intro-img svg {
+.intro-img img,
+.intro-img svg {
     max-width: 100%;
     min-height: auto;
 }
@@ -414,7 +449,8 @@ tfoot td, table th {
     margin-bottom: 1rem;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     border: none;
     background: var(--primary-color);
     padding: 1.5rem 2rem;
@@ -424,8 +460,9 @@ tfoot td, table th {
     color: #EEEEEE;
 }
 
-.form-group input:focus, .form-group textarea:focus {
-    box-shadow: 0 0 10px 2px var(--shadow-color);    
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 10px 2px var(--shadow-color);
 }
 
 body .full-width {
@@ -446,7 +483,7 @@ body .full-width {
 
 .form-group button:hover {
     background: var(--text-bg-color);
-    color: var(--primary-color); 
+    color: var(--primary-color);
 }
 
 .form-group ::placeholder {
@@ -578,7 +615,9 @@ body .full-width {
 }
 
 @media (max-width: 800px) {
-    .intro-cotent, .grid {
+
+    .intro-cotent,
+    .grid {
         grid-template-columns: 1fr;
     }
 
@@ -589,7 +628,7 @@ body .full-width {
     .form-group.full-width {
         grid-column: span 2;
     }
-    
+
     .grid {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -631,7 +670,8 @@ body .full-width {
         text-align: center;
     }
 
-    .menu-content, .menu-content ul {
+    .menu-content,
+    .menu-content ul {
         flex-direction: column;
         justify-content: center;
     }
@@ -672,8 +712,8 @@ body .full-width {
 
     .menu-spacing {
         display: none;
-    }  
-    
+    }
+
 }
 
 .gif-gallery img {
