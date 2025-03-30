@@ -613,6 +613,16 @@ body .full-width {
     text-align: center;
 }
 
+.tooltip {
+    display: none;
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+.email-copiado button:focus+.tooltip {
+    display: inline-block;
+}
+
 @media (max-width: 800px) {
 
     .intro-cotent,

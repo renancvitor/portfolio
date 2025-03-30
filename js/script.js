@@ -28,19 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
             body: new FormData(form),
             headers: { 'Accept': 'application/json' }
         })
-        .then(response => {
-            if (response.ok) {
-                successMessage.style.display = "block";
-                form.reset();
-                submitButton.disabled = true;
-            } else {
-                alert("Ocorreu um erro. Tente novamente mais tarde.");
-            }
-        })
-        .catch((error) => {
-            console.error('Erro ao enviar mensagem:', error);
-            alert("Erro ao enviar mensagem.");
-        });
+            .then(response => {
+                if (response.ok) {
+                    successMessage.style.display = "block";
+                    form.reset();
+                    submitButton.disabled = true;
+                } else {
+                    alert("Ocorreu um erro. Tente novamente mais tarde.");
+                }
+            })
+            .catch((error) => {
+                console.error('Erro ao enviar mensagem:', error);
+                alert("Erro ao enviar mensagem.");
+            });
     });
 });
 
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //         function type() {
 //             if (i < formattedText.length) {
-//                 if (formattedText[i] === "<") {  
+//                 if (formattedText[i] === "<") {
 //                     // Se encontrar <br>, adiciona diretamente
 //                     let tagEnd = formattedText.indexOf(">", i);
 //                     element.innerHTML += formattedText.substring(i, tagEnd + 1);
