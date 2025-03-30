@@ -162,6 +162,10 @@ table th {
     min-height: 100vh;
 }
 
+.intro-cotent p {
+    text-align: justify;
+}
+
 .line-break {
     display: block;
     margin-top: 7px;
@@ -334,6 +338,7 @@ table th {
     flex-flow: column wrap;
     justify-content: center;
     min-height: 100vh;
+    text-align: justify;
 }
 
 .grid-one h4 {
