@@ -296,7 +296,7 @@ table th {
 }
 
 .top3-content {
-    max-width: 64rem;
+    max-width: 120rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -435,7 +435,6 @@ table th {
 }
 
 .form-grid legend {
-    font-style: italic;
     font-size: 1.6rem;
     margin-bottom: 3rem;
 }
@@ -725,11 +724,13 @@ body .full-width {
 .gif-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 50px;
     justify-content: center;
 }
 
 .gif-gallery figure {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 545px;
     text-align: center;
-    max-width: 600px;
+    margin-bottom: 20px;
 }
